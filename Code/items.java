@@ -25,6 +25,13 @@ public class items {
     }
 
     public void Pizza(){
-
+        System.out.println("      ---------------- ");
+        System.out.println("      Available Pizza ");
+        System.out.println("      ---------------- ");
+        System.out.println("  Drinks                     Price");
+        System.out.println(" [Regular Pizza    ||    ₱145pesos] ");
+        System.out.println(" [Spinach Pizza    ||    ₱230pesos] ");
+        System.out.println(" [Overload Pizza   ||    ₱330pesos] ");
+        System.out.println(" [Beefy  Pizza     ||    ₱520pesos] ");
     }
 }
