@@ -6,6 +6,9 @@ public class Main {
         Orders order = new Orders();
         Payment payment = new Payment();
         Options option = new Options();
+        CreateAccount create = new CreateAccount();
+
+        create.createAccount();
 
     }
 }
