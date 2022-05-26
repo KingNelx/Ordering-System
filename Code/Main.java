@@ -8,7 +8,6 @@ public class Main {
         Options option = new Options();
         CreateAccount create = new CreateAccount();
 
-        create.createAccount();
 
     }
 }
