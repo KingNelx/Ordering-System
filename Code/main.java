@@ -10,9 +10,5 @@ public class main {
         items item = new items();
         item.choices();
 
-        System.out.print(" Enter order: ");
-        choice = input.nextInt();
-
-        item.options(choice);
     }
 }

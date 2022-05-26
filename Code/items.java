@@ -11,6 +11,7 @@ public class items {
     String burger;
     String pizza;
     int quantity = 0;
+    int choice = 0;
 
     public void Drinks(){
         System.out.println("      ---------------- ");
@@ -115,17 +116,20 @@ public class items {
         System.out.println(" 3. Pizza ");
         System.out.println(" 4. Show Orders ");
         System.out.println(" 5. Exit");
+
+        System.out.print(" Select option: ");
+        choice = input.nextInt();
     }
 
     public void showOrders(){
         if(orders.isEmpty()){
             System.out.println(" Its Empty ");
-            System.out.println("");
+            System.out.println(" Go order some food ");
             choices();
         }else{
-            for(String myOrders : orders){
-                System.out.println(myOrders);
+                System.out.println(" My orders: " + orders);
+                choices();
             }
         }
     }
-}
+
