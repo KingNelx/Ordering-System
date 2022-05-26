@@ -1,9 +1,18 @@
 package Code;
 
+import java.util.Scanner;
+
 public class main {
     public static void main (String[]args) {
-        payment s2 = new payment();
+        int choice = 0;
 
-        s2.checkPayment(700, 600);
+        Scanner input = new Scanner(System.in);
+        items item = new items();
+        item.choices();
+
+        System.out.print(" Enter order: ");
+        choice = input.nextInt();
+
+        item.options(choice);
     }
 }

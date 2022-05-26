@@ -1,11 +1,11 @@
 package Code;
 import java.util.Random;
 
-final public class randomBalance {
-    public int balanceGenerator(){
-        int [] random = {300, 500, 800, 1000, 1500, 2000, 2300};
-        Random random12 = new Random();
-        int randomNumbers = random12.nextInt(random.length);
-        return (random[randomNumbers]);
+public class randomBalance {
+    public int myBalance() {
+        int[] moneyGenerator = {300, 500, 700, 900, 1000, 1200, 1500, 2000};
+        Random random = new Random();
+        int balance = random.nextInt(moneyGenerator.length);
+        return moneyGenerator[balance];
     }
 }
