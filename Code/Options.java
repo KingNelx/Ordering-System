@@ -12,7 +12,11 @@ public class Options {
     public void afterLogin(){
         System.out.println(" Buy Some Food ");
 
-        System.out.println(" 1. ");
+        System.out.println(" 1. Pizza ");
+        System.out.println(" 2. Burgers ");
+        System.out.println(" 3. Drinks ");
+        System.out.println(" 4. Fries ");
+        System.out.println(" 5. Desserts ");
     }
 
 }

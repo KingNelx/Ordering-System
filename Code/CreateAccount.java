@@ -13,7 +13,7 @@ public class CreateAccount {
     private String password1;
     private String rePassword;
 
-    public int count = 0;
+    public boolean accountCreated = false;
 
     public void createAccount(){
         System.out.println(" Create Account ");
@@ -28,8 +28,7 @@ public class CreateAccount {
         if(Objects.equals(password1, rePassword)){
             String success = alert.success();
             System.out.println(success);
-            count++;
-            options.afterLogin();
+            accountCreated = true;
 
         }else{
             String fail = alert.error();
@@ -46,11 +45,19 @@ public class CreateAccount {
         System.out.print(" Enter password: ");
         password = input.nextLine();
 
-        if(password != password1){
-            System.out.println(" Error");
-        }else{
-            System.out.println(" Success");
+
+        if(accountCreated == false){
+            System.out.println(" Account does not exist. ");
+            System.exit(0);
         }
+        if(Objects.equals(password, password1)){
+            System.out.println(" Success");
+//            options.afterLogin();
+        }else{
+            System.out.println(" Error");
+            System.exit(0);
+        }
+
 
     }
 
