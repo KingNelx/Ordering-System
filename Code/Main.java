@@ -11,6 +11,7 @@ public class Main {
         Payment payment = new Payment();
         Options option = new Options();
         CreateAccount create = new CreateAccount();
+        Wallet wallet = new Wallet();
 
         do {
             option.SecurityCheck();
@@ -26,7 +27,17 @@ public class Main {
                     create.createAccount();
                     break;
                 }
+                case 3 ->{
+                    wallet.wallet();
+                    break;
+                }
+                case 4 ->{
+                    option.Foods();
+                }
+                case 5 ->{
+                    System.out.println(" Have a nice Day .. ");
+                }
             }
-        }while (choice != 3);
+        }while (choice != 5);
     }
 }
