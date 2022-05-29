@@ -7,7 +7,7 @@ public class CreateAccount {
 
     Scanner input = new Scanner(System.in);
     Alerts alert = new Alerts();
-    Options options = new Options();
+
 
     private String userName;
     private String password1;
