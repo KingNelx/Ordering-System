@@ -2,12 +2,11 @@ package Code;
 
 public class Alerts {
 
-    public String error(){
-        return " Oh it seems that your password was not match ";
+    public String Success(){
+        return " Log in Success ";
     }
 
-    public String success(){
-        return " Password match ";
+    public String Fail(){
+        return " Log in fail ";
     }
-
 }

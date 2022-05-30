@@ -1,7 +1,6 @@
 package Code;
 
-public class Orders {
-
+public class Foods {
     public void Drinks(){
         System.out.println("      ---------------- ");
         System.out.println("      Available Drinks ");
@@ -60,4 +59,5 @@ public class Orders {
         System.out.println(" [Beefy  Pizza     ||    ₱520pesos] ");
 
     }
+
 }
