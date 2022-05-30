@@ -10,6 +10,27 @@ public class Options {
                create.createAccount();
                break;
             }
+
+            case 2 ->{
+                break;
+            }
+
+            case 3 ->{
+
+                break;
+            }
+
+            case 4 ->{
+                System.out.println(" Have a nice Day. ");
+                System.exit(0);
+            }
+
+            default -> {
+                System.out.println(" Undefine Option ");
+                break;
+            }
+
+
         }
     }
 
