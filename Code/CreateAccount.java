@@ -4,6 +4,8 @@ import java.util.Objects;
 import java.util.Scanner;
 
 public class CreateAccount {
+    public int count = 0;
+    public boolean accountCreated = false;
 
     Scanner input = new Scanner(System.in);
     Alerts alert = new Alerts();
@@ -13,7 +15,7 @@ public class CreateAccount {
     private String password1;
     private String rePassword;
 
-    public boolean accountCreated = false;
+
 
     public void createAccount(){
         System.out.println(" Create Account ");
@@ -29,6 +31,7 @@ public class CreateAccount {
             String success = alert.success();
             System.out.println(success);
             accountCreated = true;
+            count++;
 
         }else{
             String fail = alert.error();
@@ -52,7 +55,7 @@ public class CreateAccount {
         }
         if(Objects.equals(password, password1)){
             System.out.println(" Success");
-//            options.afterLogin();
+            count++;
         }else{
             System.out.println(" Error");
             System.exit(0);
