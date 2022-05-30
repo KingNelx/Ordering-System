@@ -37,6 +37,7 @@ public class CreateAccount {
         System.out.print(" Enter password: ");
         password = input.nextLine();
 
+        printInfo();
         count++;
     }
 
@@ -60,8 +61,15 @@ public class CreateAccount {
         username.add(userName);
         passwords.add(password);
 
-        System.out.print(" Username: " + firstName);
-        System.out.print(" Lastname: " + lastname);
-        System.out.print(" Username: " + username);
+        for(String firstN : firstname){
+            for(String lastN : lastname){
+                for(String userN : username){
+                    System.out.println(" Credentials. ");
+                    System.out.println(" Firstname: " + firstN);
+                    System.out.println(" Lastname: " + lastN);
+                    System.out.println(" Username: " + userN);
+                }
+            }
+        }
     }
 }
