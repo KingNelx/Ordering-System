@@ -64,6 +64,7 @@ public class CreateAccount {
         for(String firstN : firstname){
             for(String lastN : lastname){
                 for(String userN : username){
+
                     System.out.println(" Credentials. ");
                     System.out.println(" Firstname: " + firstN);
                     System.out.println(" Lastname: " + lastN);

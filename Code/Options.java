@@ -12,6 +12,7 @@ public class Options {
             }
 
             case 2 ->{
+                create.Login();
                 break;
             }
 
