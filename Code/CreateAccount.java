@@ -17,10 +17,14 @@ public class CreateAccount {
     private String lastName;
     private String userName;
     private String password;
-    private int count;
+    private boolean accountCreated = false;
 
     private String user;
     private String pass;
+    private String msg1;
+    private String msg2;
+    private String msg3;
+    private String msg4;
 
     Scanner input = new Scanner(System.in);
 
@@ -37,22 +41,33 @@ public class CreateAccount {
         System.out.print(" Enter password: ");
         password = input.nextLine();
 
+        accountCreated = true;
+
         printInfo();
-        count++;
+
     }
 
     public void Login(){
-        System.out.print(" Enter username: ");
-        user = input.nextLine();
+       if(accountCreated == true){
+           System.out.print(" Enter username: ");
+           user = input.nextLine();
 
-        System.out.print(" Enter password: ");
-        pass = input.nextLine();
+           System.out.print(" Enter password: ");
+           pass = input.nextLine();
 
-        if(user.equals(userName) && pass.equals(password)){
-            alert.Success();
-        }else{
-            alert.Fail();
-        }
+           if(user.equals(userName) && pass.equals(password)){
+               msg4 = alert.Success();
+               System.out.println(msg4);
+           }else{
+               msg1 = alert.Fail();
+               System.out.println(msg1);
+           }
+       }else{
+           msg2 = alert.accountNotExist();
+           msg3 = alert.SweetMsg();
+           System.out.println(msg2);
+           System.out.println(msg3);
+       }
     }
 
     public void printInfo(){
