@@ -2,7 +2,7 @@ package Code;
 
 public class Options {
     CreateAccount create = new CreateAccount();
-
+    Admin admin = new Admin();
     public void check(int choice){
 
         switch (choice){
@@ -17,7 +17,7 @@ public class Options {
             }
 
             case 3 ->{
-
+                admin.admin();
                 break;
             }
 

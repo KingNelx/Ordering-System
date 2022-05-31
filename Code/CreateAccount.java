@@ -2,11 +2,12 @@ package Code;
 
 import java.util.Scanner;
 import java.util.ArrayList;
+import java.util.Date;
 
 public class CreateAccount {
 
     Alerts alert = new Alerts();
-
+    Date now = new Date();
     ArrayList<String>firstname = new ArrayList<>();
     ArrayList<String>lastname = new ArrayList<>();
     ArrayList<String>username = new ArrayList<>();
@@ -43,6 +44,7 @@ public class CreateAccount {
         System.out.print(" Enter password: ");
         password = input.nextLine();
 
+        System.out.println(" Account created at: " + now);
         accountCreated = true;
 
         printInfo();
@@ -73,6 +75,7 @@ public class CreateAccount {
            msg3 = alert.SweetMsg();
            System.out.println(msg2);
            System.out.println(msg3);
+
        }
     }
 

@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class Admin {
     Scanner input = new Scanner(System.in);
-
+    Alerts alert = new Alerts();
     private static String adminUser = "KingNelx";
     private static String adminPass = "Password";
 
@@ -17,5 +17,15 @@ public class Admin {
 
         System.out.print(" Admin password: ");
         password = input.nextLine();
+
+        if(username.equals(adminUser)){
+            if(password.equals(adminPass)){
+               String msg1 = alert.Success();
+                System.out.println(msg1);
+            }
+        }else{
+            String msg2 = alert.Fail();
+            System.out.println(msg2);
+        }
     }
 }
