@@ -28,6 +28,7 @@ public class Options {
 
             default -> {
                 System.out.println(" Undefine Option ");
+                System.out.print(" Select Again: ");
                 break;
             }
 

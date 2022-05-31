@@ -93,6 +93,7 @@ public class CreateAccount {
                     System.out.println("* Firstname: " + firstN);
                     System.out.println("* Lastname: " + lastN);
                     System.out.println("* Username: " + userN);
+
                 }
             }
         }
