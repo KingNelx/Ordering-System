@@ -80,10 +80,10 @@ public class CreateAccount {
             for(String lastN : lastname){
                 for(String userN : username){
 
-                    System.out.println(" Credentials. ");
-                    System.out.println(" Firstname: " + firstN);
-                    System.out.println(" Lastname: " + lastN);
-                    System.out.println(" Username: " + userN);
+                    System.out.println(" Account successfully created . ");
+                    System.out.println("* Firstname: " + firstN);
+                    System.out.println("* Lastname: " + lastN);
+                    System.out.println("* Username: " + userN);
                 }
             }
         }
