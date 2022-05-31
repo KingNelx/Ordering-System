@@ -13,6 +13,7 @@ public class CreateAccount {
     ArrayList<String>passwords = new ArrayList<>();
 
 
+
     private String firstName;
     private String lastName;
     private String userName;
@@ -25,6 +26,7 @@ public class CreateAccount {
     private String msg2;
     private String msg3;
     private String msg4;
+    private String msg5;
 
     Scanner input = new Scanner(System.in);
 
@@ -47,6 +49,8 @@ public class CreateAccount {
 
     }
 
+    User users = new User();
+
     public void Login(){
        if(accountCreated == true){
            System.out.print(" Enter username: ");
@@ -58,12 +62,14 @@ public class CreateAccount {
            if(user.equals(userName) && pass.equals(password)){
                msg4 = alert.Success();
                System.out.println(msg4);
+               users.user();
+
            }else{
                msg1 = alert.Fail();
                System.out.println(msg1);
            }
        }else{
-           msg2 = alert.accountNotExist();
+           msg2 = alert.accountNotCreated();
            msg3 = alert.SweetMsg();
            System.out.println(msg2);
            System.out.println(msg3);

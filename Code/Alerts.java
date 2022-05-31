@@ -17,4 +17,8 @@ public class Alerts {
     public String accountNotExist(){
         return " Account does not exist. ";
     }
+
+    public String accountNotCreated(){
+        return " There is no data existing in the list ";
+    }
 }
