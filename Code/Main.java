@@ -14,5 +14,12 @@ public class Main {
         choice = input.nextInt();
         opt.check(choice);
         }while(choice !=4);
+
+//        while(choice != 4){
+//            opt.options();
+//            System.out.print(" Select option: ");
+//            choice = input.nextInt();
+//            opt.check();
+//        }
     }
 }
