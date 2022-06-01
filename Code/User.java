@@ -65,7 +65,30 @@ public class User {
                         }
                     }
                     case 2 -> {
+                        food.Burgers();
+                        System.out.print(" Select order: ");
+                        burgerOrder = drink.nextInt();
 
+                        System.out.print(" How many?: ");
+                        int count1 = input.nextInt();
+
+                        if (burgerOrder == 1) {
+                            System.out.println(" You order " + count1 + " Burgers ");
+                            cost = 15 * count1;
+                            System.out.println(" Total cost: " + cost + "PHP");
+                            System.out.print(" Input payment: ");
+                            balance = input.nextInt();
+
+                            if (checkMoney.isBalanceEnough(balance, cost)) {
+                                System.out.println(" Total cost: " + cost + "PHP");
+                                System.out.println(" You pay: " + balance + "PHP");
+                                change = balance - cost;
+                                System.out.println(" Total change: " + change + "PHP");
+                            } else {
+                                System.out.println(" Your money is not enough .. ");
+                                System.exit(0);
+                            }
+                        }
                     }
 
                     case 3 -> {
