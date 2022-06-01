@@ -26,58 +26,62 @@ public class User {
     private int cost;
     private int order;
     public void user(){
-        option.userOpt();
-        System.out.print(" Select option: ");
-        choice = input.nextInt();
+        do {
 
-        if(choice == 1){
-            food.foods();
-            System.out.print(" Select what to order: ");
-            order = input.nextInt();
+            option.userOpt();
+            System.out.print(" Select option: ");
+            choice = input.nextInt();
 
-            switch (order){
-                case 1 ->{
-                    food.Drinks();
-                    System.out.print(" Select order: ");
-                    drinkOrder = drink.nextInt();
+            if (choice == 1) {
+                food.foods();
+                System.out.print(" Select what to order: ");
+                order = input.nextInt();
 
-                    System.out.print(" How many?: ");
-                    int count1 = input.nextInt();
+                switch (order) {
+                    case 1 -> {
+                        food.Drinks();
+                        System.out.print(" Select order: ");
+                        drinkOrder = drink.nextInt();
 
-                    if(drinkOrder == 1){
-                        System.out.println(" You order " + count1 + " Bottles of Coke ");
-                        cost = 15 * count1;
-                        System.out.println(" Total cost: " + cost + "PHP");
-                        System.out.print(" Input payment: ");
-                        balance = input.nextInt();
+                        System.out.print(" How many?: ");
+                        int count1 = input.nextInt();
 
-                        if(checkMoney.isBalanceEnough(balance, cost)){
+                        if (drinkOrder == 1) {
+                            System.out.println(" You order " + count1 + " Bottles of Coke ");
+                            cost = 15 * count1;
                             System.out.println(" Total cost: " + cost + "PHP");
-                            System.out.println(" You pay: " + balance + "PHP");
-                            change = balance - cost;
-                            System.out.println(" Total change: " + change + "PHP");
-                        }else{
-                            System.out.println(" Your money is not enough .. ");
-                            System.exit(0);
+                            System.out.print(" Input payment: ");
+                            balance = input.nextInt();
+
+                            if (checkMoney.isBalanceEnough(balance, cost)) {
+                                System.out.println(" Total cost: " + cost + "PHP");
+                                System.out.println(" You pay: " + balance + "PHP");
+                                change = balance - cost;
+                                System.out.println(" Total change: " + change + "PHP");
+                            } else {
+                                System.out.println(" Your money is not enough .. ");
+                                System.exit(0);
+                            }
                         }
                     }
-                }case 2 -> {
+                    case 2 -> {
 
+                    }
+
+                    case 3 -> {
+                        System.out.println(" Have a nice day !.");
+                        break;
+                    }
+
+                    default -> {
+                        System.out.println(" Invalid option, please select option again. ");
+                        break;
+                    }
                 }
 
-                case 3 ->{
-                    System.out.println(" Have a nice day !.");
-                    break;
-                }
 
-                default -> {
-                    System.out.println(" Invalid option, please select option again. ");
-                    break;
-                }
             }
-
-
-        }
+        }while (choice != 3);
     }
 
     public void test1(){
