@@ -11,6 +11,8 @@ public class User {
     Scanner dessert = new Scanner(System.in);
 
     UserOption option = new UserOption();
+    CheckBalance check = new CheckBalance();
+
     CheckBalance checkMoney = new CheckBalance();
     Foods food = new Foods();
 
@@ -30,6 +32,7 @@ public class User {
 
                 int change;
                 int balance;
+
                 int cost;
                 switch (order) {
                     case 1 -> {
@@ -406,7 +409,8 @@ public class User {
                         System.out.println(" Invalid option, please select option again. ");
                 }
 
-
+            }else if(choice == 2){
+                System.out.println(" My wallet: " + check.getMoney());
             }
         }while (choice != 3);
     }
