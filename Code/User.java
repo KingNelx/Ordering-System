@@ -1,11 +1,12 @@
 package Code;
 import java.util.Scanner;
-import java.util.LinkedList;
+
 
 public class User {
     Scanner input = new Scanner(System.in);
     UserOption option = new UserOption();
-    LinkedList<String>foods = new LinkedList<>();
+
+
     Foods food = new Foods();
 //    int test; for testing
     int choice;
@@ -23,4 +24,5 @@ public class User {
         System.out.println(" Test ");
         System.exit(0);
     }
+
 }
