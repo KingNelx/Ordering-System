@@ -15,6 +15,7 @@ public class User {
 
     CheckBalance checkMoney = new CheckBalance();
     Foods food = new Foods();
+    int money = check.getMoney();
 
     public void user(){
         //    int test; for testing
@@ -47,14 +48,17 @@ public class User {
                             System.out.println(" You order " + count1 + " Bottles of Coke ");
                             cost = 15 * count1;
                             System.out.println(" Total cost: " + cost + "PHP");
+                            System.out.println(" Your Balance is: " + money);
                             System.out.print(" Input payment: ");
                             balance = input.nextInt();
+                            balance = balance - money;
 
                             if (checkMoney.isBalanceEnough(balance, cost)) {
                                 System.out.println(" Total cost: " + cost + "PHP");
                                 System.out.println(" You pay: " + balance + "PHP");
                                 change = balance - cost;
                                 System.out.println(" Total change: " + change + "PHP");
+                                System.out.println(" Total Balance: " + balance);
                             } else {
                                 System.out.println(" Your money is not enough .. ");
                                 System.exit(0);
@@ -410,7 +414,7 @@ public class User {
                 }
 
             }else if(choice == 2){
-                System.out.println(" My wallet: " + check.getMoney());
+
             }
         }while (choice != 3);
     }
