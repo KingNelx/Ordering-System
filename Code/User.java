@@ -29,7 +29,7 @@ public class User {
                 int order = input.nextInt();
 
                 int change;
-                int balance = 500;
+                int balance;
                 int cost;
                 switch (order) {
                     case 1 -> {
@@ -402,20 +402,13 @@ public class User {
                         }
                     }
 
-                    default -> {
+                    default ->
                         System.out.println(" Invalid option, please select option again. ");
-                        break;
-                    }
                 }
 
 
             }
         }while (choice != 3);
     }
-
-//    public void test1(){
-//        System.out.println(" Test ");
-//        System.exit(0);
-//    }
 
 }
