@@ -21,6 +21,7 @@ public class User {
     private int friesOrder;
     private int dessertOrder;
     private int myOrder;
+    private int change;
     private int balance = 500;
     private int cost;
     private int order;
@@ -46,9 +47,19 @@ public class User {
                     if(drinkOrder == 1){
                         System.out.println(" You order " + count1 + " Bottles of Coke ");
                         cost = 15 * count1;
-                        System.out.print(" Total cost: " + cost + "PHP");
+                        System.out.println(" Total cost: " + cost + "PHP");
                         System.out.print(" Input payment: ");
-                        balance = balance - cost;
+                        balance = input.nextInt();
+
+                        if(checkMoney.isBalanceEnough(balance, cost)){
+                            System.out.println(" Total cost: " + cost + "PHP");
+                            System.out.println(" You pay: " + balance + "PHP");
+                            change = balance - cost;
+                            System.out.println(" Total change: " + change + "PHP");
+                        }else{
+                            System.out.println(" Your money is not enough .. ");
+                            System.exit(0);
+                        }
                     }
                 }case 2 -> {
 

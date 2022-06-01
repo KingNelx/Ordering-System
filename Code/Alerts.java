@@ -14,8 +14,8 @@ public class Alerts {
         return " Choose again ";
     }
 
-    public String accountNotExist(){
-        return " Account does not exist. ";
+    public String notEnoughMoney(){
+        return " Im sorry, It seem that your balance is not enough!. ";
     }
 
     public String accountNotCreated(){
