@@ -37,7 +37,7 @@ public class Foods {
         System.out.println("      ---------------- ");
         System.out.println("      Available Pizza ");
         System.out.println("      ---------------- ");
-        System.out.println("  Drinks                     Price");
+        System.out.println("       Pizza                     Price");
         System.out.println(" 1. [Regular Pizza    ||    ₱145pesos] ");
         System.out.println(" 2. [Spinach Pizza    ||    ₱230pesos] ");
         System.out.println(" 3. [Overload Pizza   ||    ₱330pesos] ");
@@ -47,25 +47,25 @@ public class Foods {
 
     public void Fries(){
         System.out.println("      ---------------- ");
-        System.out.println("      Available Pizza ");
+        System.out.println("      Available Fries ");
         System.out.println("      ---------------- ");
-        System.out.println("  Drinks                     Price");
-        System.out.println(" 1. [Regular Pizza    ||    ₱145pesos] ");
-        System.out.println(" 2. [Spinach Pizza    ||    ₱230pesos] ");
-        System.out.println(" 3. [Overload Pizza   ||    ₱330pesos] ");
-        System.out.println(" 4. [Beefy  Pizza     ||    ₱520pesos] ");
+        System.out.println("      Fries                     Price");
+        System.out.println(" 1. [Regular Fries      ||    ₱75pesos] ");
+        System.out.println(" 2. [Curl Cheesy Fries  ||    ₱130pesos] ");
+        System.out.println(" 3. [Pepereno Fries     ||    ₱145pesos] ");
+        System.out.println(" 4. [Honey  Fries       ||    ₱220pesos] ");
 
     }
 
     public void Desserts(){
         System.out.println("      ---------------- ");
-        System.out.println("      Available Pizza ");
+        System.out.println("      Available Desserts ");
         System.out.println("      ---------------- ");
-        System.out.println("  Drinks                     Price");
-        System.out.println(" 1. [Regular Pizza    ||    ₱145pesos] ");
-        System.out.println(" 2. [Spinach Pizza    ||    ₱230pesos] ");
-        System.out.println(" 3. [Overload Pizza   ||    ₱330pesos] ");
-        System.out.println(" 4. [Beefy  Pizza     ||    ₱520pesos] ");
+        System.out.println("    Desserts                     Price");
+        System.out.println(" 1. [Ice Cream         ||    ₱45pesos] ");
+        System.out.println(" 2. [Mango Shake       ||    ₱70pesos] ");
+        System.out.println(" 3. [Blue berry Cake   ||    ₱100pesos] ");
+        System.out.println(" 4. [Grape Juice       ||    ₱120pesos] ");
 
     }
 

@@ -121,7 +121,55 @@ public class User {
                         int count1 = input.nextInt();
 
                         if (burgerOrder == 1) {
-                            System.out.println(" You order " + count1 + " Burgers ");
+                            System.out.println(" You order " + count1 + " Regular Burgers ");
+                            cost = 15 * count1;
+                            System.out.println(" Total cost: " + cost + "PHP");
+                            System.out.print(" Input payment: ");
+                            balance = input.nextInt();
+
+                            if (checkMoney.isBalanceEnough(balance, cost)) {
+                                System.out.println(" Total cost: " + cost + "PHP");
+                                System.out.println(" You pay: " + balance + "PHP");
+                                change = balance - cost;
+                                System.out.println(" Total change: " + change + "PHP");
+                            } else {
+                                System.out.println(" Your money is not enough .. ");
+                                System.exit(0);
+                            }
+                        }else if (burgerOrder == 2){
+                            System.out.println(" You order " + count1 + " Cheese Burgers ");
+                            cost = 15 * count1;
+                            System.out.println(" Total cost: " + cost + "PHP");
+                            System.out.print(" Input payment: ");
+                            balance = input.nextInt();
+
+                            if (checkMoney.isBalanceEnough(balance, cost)) {
+                                System.out.println(" Total cost: " + cost + "PHP");
+                                System.out.println(" You pay: " + balance + "PHP");
+                                change = balance - cost;
+                                System.out.println(" Total change: " + change + "PHP");
+                            } else {
+                                System.out.println(" Your money is not enough .. ");
+                                System.exit(0);
+                            }
+                        }else if (burgerOrder == 3){
+                            System.out.println(" You order " + count1 + " Overload Burgers ");
+                            cost = 15 * count1;
+                            System.out.println(" Total cost: " + cost + "PHP");
+                            System.out.print(" Input payment: ");
+                            balance = input.nextInt();
+
+                            if (checkMoney.isBalanceEnough(balance, cost)) {
+                                System.out.println(" Total cost: " + cost + "PHP");
+                                System.out.println(" You pay: " + balance + "PHP");
+                                change = balance - cost;
+                                System.out.println(" Total change: " + change + "PHP");
+                            } else {
+                                System.out.println(" Your money is not enough .. ");
+                                System.exit(0);
+                            }
+                        }else if (burgerOrder == 4){
+                            System.out.println(" You order " + count1 + " Chicken Burgers ");
                             cost = 15 * count1;
                             System.out.println(" Total cost: " + cost + "PHP");
                             System.out.print(" Input payment: ");
@@ -140,8 +188,151 @@ public class User {
                     }
 
                     case 3 -> {
-                        System.out.println(" Have a nice day !.");
-                        break;
+                        food.Pizza();
+                        System.out.print(" Select order: ");
+                        burgerOrder = drink.nextInt();
+
+                        System.out.print(" How many?: ");
+                        int count1 = input.nextInt();
+
+                        if (pizzaOrder == 1) {
+                            System.out.println(" You order " + count1 + " Regular Pizza ");
+                            cost = 15 * count1;
+                            System.out.println(" Total cost: " + cost + "PHP");
+                            System.out.print(" Input payment: ");
+                            balance = input.nextInt();
+
+                            if (checkMoney.isBalanceEnough(balance, cost)) {
+                                System.out.println(" Total cost: " + cost + "PHP");
+                                System.out.println(" You pay: " + balance + "PHP");
+                                change = balance - cost;
+                                System.out.println(" Total change: " + change + "PHP");
+                            } else {
+                                System.out.println(" Your money is not enough .. ");
+                                System.exit(0);
+                            }
+                        }else if (pizzaOrder == 2){
+                            System.out.println(" You order " + count1 + " Spinach Pizza ");
+                            cost = 15 * count1;
+                            System.out.println(" Total cost: " + cost + "PHP");
+                            System.out.print(" Input payment: ");
+                            balance = input.nextInt();
+
+                            if (checkMoney.isBalanceEnough(balance, cost)) {
+                                System.out.println(" Total cost: " + cost + "PHP");
+                                System.out.println(" You pay: " + balance + "PHP");
+                                change = balance - cost;
+                                System.out.println(" Total change: " + change + "PHP");
+                            } else {
+                                System.out.println(" Your money is not enough .. ");
+                                System.exit(0);
+                            }
+                        }else if (pizzaOrder == 3){
+                            System.out.println(" You order " + count1 + " Overload Pizza ");
+                            cost = 15 * count1;
+                            System.out.println(" Total cost: " + cost + "PHP");
+                            System.out.print(" Input payment: ");
+                            balance = input.nextInt();
+
+                            if (checkMoney.isBalanceEnough(balance, cost)) {
+                                System.out.println(" Total cost: " + cost + "PHP");
+                                System.out.println(" You pay: " + balance + "PHP");
+                                change = balance - cost;
+                                System.out.println(" Total change: " + change + "PHP");
+                            } else {
+                                System.out.println(" Your money is not enough .. ");
+                                System.exit(0);
+                            }
+                        }else if (pizzaOrder == 4){
+                            System.out.println(" You order " + count1 + " Beefy  Pizza ");
+                            cost = 15 * count1;
+                            System.out.println(" Total cost: " + cost + "PHP");
+                            System.out.print(" Input payment: ");
+                            balance = input.nextInt();
+
+                            if (checkMoney.isBalanceEnough(balance, cost)) {
+                                System.out.println(" Total cost: " + cost + "PHP");
+                                System.out.println(" You pay: " + balance + "PHP");
+                                change = balance - cost;
+                                System.out.println(" Total change: " + change + "PHP");
+                            } else {
+                                System.out.println(" Your money is not enough .. ");
+                                System.exit(0);
+                            }
+                        }
+                    }case 4 ->{
+                        food.Fries();
+                        System.out.print(" Select order: ");
+                        friesOrder = drink.nextInt();
+
+                        System.out.print(" How many?: ");
+                        int count1 = input.nextInt();
+
+                        if (friesOrder == 1) {
+                            System.out.println(" You order " + count1 + " Regular Pizza ");
+                            cost = 15 * count1;
+                            System.out.println(" Total cost: " + cost + "PHP");
+                            System.out.print(" Input payment: ");
+                            balance = input.nextInt();
+
+                            if (checkMoney.isBalanceEnough(balance, cost)) {
+                                System.out.println(" Total cost: " + cost + "PHP");
+                                System.out.println(" You pay: " + balance + "PHP");
+                                change = balance - cost;
+                                System.out.println(" Total change: " + change + "PHP");
+                            } else {
+                                System.out.println(" Your money is not enough .. ");
+                                System.exit(0);
+                            }
+                        }else if (friesOrder == 2){
+                            System.out.println(" You order " + count1 + " Spinach Pizza ");
+                            cost = 15 * count1;
+                            System.out.println(" Total cost: " + cost + "PHP");
+                            System.out.print(" Input payment: ");
+                            balance = input.nextInt();
+
+                            if (checkMoney.isBalanceEnough(balance, cost)) {
+                                System.out.println(" Total cost: " + cost + "PHP");
+                                System.out.println(" You pay: " + balance + "PHP");
+                                change = balance - cost;
+                                System.out.println(" Total change: " + change + "PHP");
+                            } else {
+                                System.out.println(" Your money is not enough .. ");
+                                System.exit(0);
+                            }
+                        }else if (friesOrder == 3){
+                            System.out.println(" You order " + count1 + " Overload Pizza ");
+                            cost = 15 * count1;
+                            System.out.println(" Total cost: " + cost + "PHP");
+                            System.out.print(" Input payment: ");
+                            balance = input.nextInt();
+
+                            if (checkMoney.isBalanceEnough(balance, cost)) {
+                                System.out.println(" Total cost: " + cost + "PHP");
+                                System.out.println(" You pay: " + balance + "PHP");
+                                change = balance - cost;
+                                System.out.println(" Total change: " + change + "PHP");
+                            } else {
+                                System.out.println(" Your money is not enough .. ");
+                                System.exit(0);
+                            }
+                        }else if (friesOrder == 4) {
+                            System.out.println(" You order " + count1 + " Beefy  Pizza ");
+                            cost = 15 * count1;
+                            System.out.println(" Total cost: " + cost + "PHP");
+                            System.out.print(" Input payment: ");
+                            balance = input.nextInt();
+
+                            if (checkMoney.isBalanceEnough(balance, cost)) {
+                                System.out.println(" Total cost: " + cost + "PHP");
+                                System.out.println(" You pay: " + balance + "PHP");
+                                change = balance - cost;
+                                System.out.println(" Total change: " + change + "PHP");
+                            } else {
+                                System.out.println(" Your money is not enough .. ");
+                                System.exit(0);
+                            }
+                        }
                     }
 
                     default -> {
