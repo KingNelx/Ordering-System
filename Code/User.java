@@ -47,6 +47,18 @@ public class User {
                         System.out.print(" Total cost: " + cost + "PHP");
                         System.exit(0);
                     }
+                }case 2 -> {
+
+                }
+
+                case 3 ->{
+                    System.out.println(" Have a nice day !.");
+                    break;
+                }
+
+                default -> {
+                    System.out.println(" Invalid option, please select option again. ");
+                    break;
                 }
             }
 
