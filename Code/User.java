@@ -13,19 +13,10 @@ public class User {
     UserOption option = new UserOption();
     CheckBalance checkMoney = new CheckBalance();
     Foods food = new Foods();
-//    int test; for testing
-    private int choice;
-    private int drinkOrder;
-    private int burgerOrder;
-    private int pizzaOrder;
-    private int friesOrder;
-    private int dessertOrder;
-    private int myOrder;
-    private int change;
-    private int balance = 500;
-    private int cost;
-    private int order;
+
     public void user(){
+        //    int test; for testing
+        int choice;
         do {
 
             option.userOpt();
@@ -35,13 +26,16 @@ public class User {
             if (choice == 1) {
                 food.foods();
                 System.out.print(" Select what to order: ");
-                order = input.nextInt();
+                int order = input.nextInt();
 
+                int change;
+                int balance = 500;
+                int cost;
                 switch (order) {
                     case 1 -> {
                         food.Drinks();
                         System.out.print(" Select order: ");
-                        drinkOrder = drink.nextInt();
+                        int drinkOrder = drink.nextInt();
 
                         System.out.print(" How many?: ");
                         int count1 = input.nextInt();
@@ -115,7 +109,7 @@ public class User {
                     case 2 -> {
                         food.Burgers();
                         System.out.print(" Select order: ");
-                        burgerOrder = burger.nextInt();
+                        int burgerOrder = burger.nextInt();
 
                         System.out.print(" How many?: ");
                         int count1 = input.nextInt();
@@ -190,7 +184,7 @@ public class User {
                     case 3 -> {
                         food.Pizza();
                         System.out.print(" Select order: ");
-                        pizzaOrder = pizza.nextInt();
+                        int pizzaOrder = pizza.nextInt();
 
                         System.out.print(" How many?: ");
                         int count1 = input.nextInt();
@@ -263,7 +257,7 @@ public class User {
                     }case 4 ->{
                         food.Fries();
                         System.out.print(" Select order: ");
-                        friesOrder = fries.nextInt();
+                        int friesOrder = fries.nextInt();
 
                         System.out.print(" How many?: ");
                         int count1 = input.nextInt();
@@ -336,7 +330,7 @@ public class User {
                     }case 5 ->{
                         food.Desserts();
                         System.out.print(" Select order: ");
-                        dessertOrder = dessert.nextInt();
+                        int dessertOrder = dessert.nextInt();
 
                         System.out.print(" How many?: ");
                         int count1 = input.nextInt();
