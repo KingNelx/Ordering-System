@@ -19,7 +19,8 @@ public class User {
     private int pizzaOrder;
     private int friesOrder;
     private int dessertOrder;
-
+    private int myOrder;
+    private int cost;
     private int order;
     public void user(){
         option.userOpt();
@@ -34,7 +35,18 @@ public class User {
             switch (order){
                 case 1 ->{
                     food.Drinks();
-                    System.exit(0);
+                    System.out.print(" Select order: ");
+                    drinkOrder = drink.nextInt();
+
+                    System.out.print(" How many?: ");
+                    int count1 = input.nextInt();
+
+                    if(drinkOrder == 1){
+                        System.out.println(" You order " + count1 + " Bottles of Coke ");
+                        cost = 15 * count1;
+                        System.out.print(" Total cost: " + cost + "PHP");
+                        System.exit(0);
+                    }
                 }
             }
 
