@@ -11,6 +11,7 @@ public class User {
     Scanner dessert = new Scanner(System.in);
 
     UserOption option = new UserOption();
+    CheckBalance checkMoney = new CheckBalance();
     Foods food = new Foods();
 //    int test; for testing
     private int choice;
@@ -20,6 +21,7 @@ public class User {
     private int friesOrder;
     private int dessertOrder;
     private int myOrder;
+    private int balance = 500;
     private int cost;
     private int order;
     public void user(){
@@ -45,7 +47,8 @@ public class User {
                         System.out.println(" You order " + count1 + " Bottles of Coke ");
                         cost = 15 * count1;
                         System.out.print(" Total cost: " + cost + "PHP");
-                        System.exit(0);
+                        System.out.print(" Input payment: ");
+                        balance = balance - cost;
                     }
                 }case 2 -> {
 
