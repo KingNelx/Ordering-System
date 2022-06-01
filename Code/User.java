@@ -62,6 +62,54 @@ public class User {
                                 System.out.println(" Your money is not enough .. ");
                                 System.exit(0);
                             }
+                        }else if(drinkOrder == 2){
+                            System.out.println(" You order " + count1 + " Bottles of Sprite ");
+                            cost = 20 * count1;
+                            System.out.println(" Total cost: " + cost + "PHP");
+                            System.out.print(" Input payment: ");
+                            balance = input.nextInt();
+
+                            if (checkMoney.isBalanceEnough(balance, cost)) {
+                                System.out.println(" Total cost: " + cost + "PHP");
+                                System.out.println(" You pay: " + balance + "PHP");
+                                change = balance - cost;
+                                System.out.println(" Total change: " + change + "PHP");
+                            } else {
+                                System.out.println(" Your money is not enough .. ");
+                                System.exit(0);
+                            }
+                        }else if (drinkOrder == 3){
+                            System.out.println(" You order " + count1 + " Bottles of Royal ");
+                            cost = 20 * count1;
+                            System.out.println(" Total cost: " + cost + "PHP");
+                            System.out.print(" Input payment: ");
+                            balance = input.nextInt();
+
+                            if (checkMoney.isBalanceEnough(balance, cost)) {
+                                System.out.println(" Total cost: " + cost + "PHP");
+                                System.out.println(" You pay: " + balance + "PHP");
+                                change = balance - cost;
+                                System.out.println(" Total change: " + change + "PHP");
+                            } else {
+                                System.out.println(" Your money is not enough .. ");
+                                System.exit(0);
+                            }
+                        }else if (drinkOrder == 4){
+                            System.out.println(" You order " + count1 + " Bottles of Water ");
+                            cost = 20 * count1;
+                            System.out.println(" Total cost: " + cost + "PHP");
+                            System.out.print(" Input payment: ");
+                            balance = input.nextInt();
+
+                            if (checkMoney.isBalanceEnough(balance, cost)) {
+                                System.out.println(" Total cost: " + cost + "PHP");
+                                System.out.println(" You pay: " + balance + "PHP");
+                                change = balance - cost;
+                                System.out.println(" Total change: " + change + "PHP");
+                            } else {
+                                System.out.println(" Your money is not enough .. ");
+                                System.exit(0);
+                            }
                         }
                     }
                     case 2 -> {
