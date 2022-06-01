@@ -1,6 +1,15 @@
 package Code;
 
 public class Foods {
+
+    public void foods(){
+        System.out.println(" 1. Drinks ");
+        System.out.println(" 2. Burgers ");
+        System.out.println(" 3. Pizza ");
+        System.out.println(" 4. Fries ");
+        System.out.println(" 5. Desserts ");
+        System.out.println(" 6. Exit ");
+    }
     public void Drinks(){
         System.out.println("      ---------------- ");
         System.out.println("      Available Drinks ");

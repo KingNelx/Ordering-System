@@ -1,10 +1,12 @@
 package Code;
 import java.util.Scanner;
+import java.util.LinkedList;
 
 public class User {
     Scanner input = new Scanner(System.in);
     UserOption option = new UserOption();
-
+    LinkedList<String>foods = new LinkedList<>();
+    Foods food = new Foods();
 //    int test; for testing
     int choice;
     public void user(){
@@ -13,8 +15,7 @@ public class User {
         choice = input.nextInt();
 
         if(choice == 1){
-            System.out.println(" Food ");
-            System.exit(0);
+            food.foods();
         }
     }
 
