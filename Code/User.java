@@ -3,13 +3,18 @@ import java.util.Scanner;
 
 public class User {
     Scanner input = new Scanner(System.in);
-    int test;
-    public void user(){
-        System.out.println(" Enter test ");
-        test = input.nextInt();
+    UserOption option = new UserOption();
 
-        if(test == 1){
-            test1();
+//    int test; for testing
+    int choice;
+    public void user(){
+        option.userOpt();
+        System.out.print(" Select option: ");
+        choice = input.nextInt();
+
+        if(choice == 1){
+            System.out.println(" Food ");
+            System.exit(0);
         }
     }
 
